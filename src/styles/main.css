@@ -258,6 +258,20 @@ main {
     text-decoration: none;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 .post-item__title {
     font-weight: 500;
     font-size: 16px;

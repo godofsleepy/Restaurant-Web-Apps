@@ -22,6 +22,8 @@ main.addEventListener('click', function () {
     drawer.classList.remove('open');
 });
 
+
+
 data.restaurants.forEach(resto => {
     posts.innerHTML += `
     <article class="post-item">
@@ -29,13 +31,11 @@ data.restaurants.forEach(resto => {
          src="${resto.pictureId}"
          alt="${resto.pictureId}">
     <div class="post-item__content">
-        <p class="post-item__date">Kota : ${resto.city} <a href="#" class="post-item__date__author">Rate ${resto.rating}</a>
+        <p class="post-item__date">Kota : ${resto.city} Rate ${resto.rating}
         </p>
-        <h1 class="post-item__title"><a href="#">${resto.name}</a></h1>
+        <h1 class="post-item__title">${resto.name}</h1>
         <p class="post-item__description">${resto.description}</p>
     </div>
 </article>
     `
 })
-
-
