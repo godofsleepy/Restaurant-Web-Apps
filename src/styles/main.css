@@ -47,7 +47,7 @@ body {
     font-size: 32px;
     margin: 10px auto;
     display: block;
-    width: 30px;
+    width: 44px;
 }
 
 
@@ -256,6 +256,12 @@ main {
 .post-item__date__author {
     color: red;
     text-decoration: none;
+}
+
+.link-item {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
 }
 
 .skip-link {

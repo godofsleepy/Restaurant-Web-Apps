@@ -26,16 +26,19 @@ main.addEventListener('click', function () {
 
 data.restaurants.forEach(resto => {
     posts.innerHTML += `
+    <a href="#" class="link-item">
     <article class="post-item">
     <img class="post-item__thumbnail"
          src="${resto.pictureId}"
-         alt="${resto.pictureId}">
+         alt="${resto.name}">
     <div class="post-item__content">
         <p class="post-item__date">Kota : ${resto.city} Rate ${resto.rating}
         </p>
         <h1 class="post-item__title">${resto.name}</h1>
         <p class="post-item__description">${resto.description}</p>
     </div>
-</article>
+    </article>
+    </a>
+
     `
 })
