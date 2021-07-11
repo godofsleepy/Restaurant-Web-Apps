@@ -32,9 +32,9 @@ data.restaurants.forEach(resto => {
          src="${resto.pictureId}"
          alt="${resto.name}">
     <div class="post-item__content">
-        <p class="post-item__date">Kota : ${resto.city} Rate ${resto.rating}
-        </p>
         <h1 class="post-item__title">${resto.name}</h1>
+        <p class="post-item__date">${resto.city} - ${resto.rating} Stars
+        </p>
         <p class="post-item__description">${resto.description}</p>
     </div>
     </article>
