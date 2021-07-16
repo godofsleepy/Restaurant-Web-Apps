@@ -6,7 +6,7 @@
 @media screen and (max-width: 499px) {
     .nav {
         z-index: 10;
-        background-color: #fff;
+        background-image: url("../public/images/heros/background.jpeg");
         width: 300px;
         position: absolute;
 
@@ -32,6 +32,18 @@
 
     .hero__title {  
         padding: 8px;
+    }
+
+    .header {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        
     }
 }
 
