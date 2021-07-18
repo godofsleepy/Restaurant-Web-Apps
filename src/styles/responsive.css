@@ -1,127 +1,148 @@
 .posts {
-    display: grid;
-    grid-row-gap: 16px;
+  display: grid;
+  grid-row-gap: 16px;
 }
 
 @media screen and (max-width: 499px) {
-    .nav {
-        z-index: 10;
-        background-image: url("../public/images/heros/background.jpeg");
-        width: 300px;
-        position: absolute;
+  .content {
+    padding: 0;
+  }
 
-        /* This trasform moves the drawer off canvas. */
-        -webkit-transform: translate(-300px, 0);
-        transform: translate(-300px, 0);
+  .nav {
+    z-index: 10;
+    background-image: url("../public/images/heros/background.jpeg");
+    width: 300px;
+    position: absolute;
 
-        /* Optionally, we animate the drawer. */
-        transition: transform 0.3s ease;
-    }
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
 
-    .open {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
 
-    .nav__item {
-        display: list-item;
-        border-bottom: 1px solid #E0E0E0;
-        width: 100%;
-        text-align: left;
-    }
+  .header__title {
+    font-size: 2.5rem;
+  }
 
-    .hero__title {  
-        padding: 8px;
-    }
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
 
-    .header {
-        grid-template-columns: 1fr auto;
-        padding: 8px 32px;
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        gap: 10px;
-        position: sticky;
-        top: 0;
-        z-index: 99;
-        
-    }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero__title {
+    padding: 8px;
+  }
+
+  .header {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+
+  .detail-item {
+    width: 100%;
+  }
+
+  .detail-description {
+    padding: 0.5em 1em;
+  }
 }
 
 @media screen and (min-width: 455px) {
-    .headline__content {
-        padding: 16px 16px;
-    }
+  .headline__content {
+    padding: 16px 16px;
+  }
 
-    .headline__title {
-        font-size: 28px;
-    }
+  .headline__title {
+    font-size: 28px;
+  }
 
-    .headline__description {
-        font-size: 16px;
-    }
+  .headline__description {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 500px) {
-    .header__menu {
-        display: none;
-    }
+  .header__menu {
+    display: none;
+  }
 
-   
+  .detail-item {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 650px) {
-    .headline__content {
-        margin: 0 auto;
-        max-width: 650px;
-    }
+  .headline__content {
+    margin: 0 auto;
+    max-width: 650px;
+  }
 
-    .post-item__content {
-        padding: 16px 0px 32px 0px;
-    }
+  .post-item__content {
+    padding: 16px 0px 32px 0px;
+  }
 
-    .post-item__title {
-        font-size: 18px;
-    }
+  .post-item__title {
+    font-size: 18px;
+  }
 
-    .post-item__description {
-        font-size: 14px;
-    }
+  .post-item__description {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 700px) {
-    .posts {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 16px;
-    }
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    .nav__list {
-        max-width: 800px;
-        margin: 0 auto;
-    }
+  .nav__list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 900px) {
-    .headline {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .headline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .headline__content {
-        padding: 16px 32px;
-    }
+  .detail-item {
+    width: 50%;
+  }
 
-    .posts {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .headline__content {
+    padding: 16px 32px;
+  }
+
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    main {
-        max-width: 1200px;
-    }
+  main {
+    max-width: 1200px;
+  }
 }
