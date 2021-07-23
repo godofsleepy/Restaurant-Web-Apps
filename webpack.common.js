@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -19,21 +20,24 @@ module.exports = {
           {
             loader: 'css-loader',
           },
-          
+
         ],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
         use: [
-            'file-loader',
+          'file-loader',
         ],
-    },
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/templates/index.html'),
       filename: 'index.html',
+    }),
+    new ServiceWorkerWebpackPlugin({
+      entry: path.resolve(__dirname, 'src/scripts/sw.js'),
     }),
     new CopyWebpackPlugin({
       patterns: [
