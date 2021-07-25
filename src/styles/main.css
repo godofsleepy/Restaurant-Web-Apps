@@ -370,3 +370,121 @@ footer a {
 .review-date {
   font-size: 0.8rem;
 }
+
+.btn-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-1 button {
+  text-decoration: none;
+  border: 2px solid #010100;
+  padding: 15px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+button span {
+  position: relative;
+  /* z-index coz when we put bg to before and after this span text will not be visible */
+  z-index: 3;
+}
+
+/* Button 1 styles */
+
+.btn-1 button::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  /*100% plus double the times left values*/
+  height: calc(100% - 10px);
+  background-image: url("../public/images/heros/background.jpeg");
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-1 button:hover::before {
+  transform: scaleY(0);
+}
+
+.btn-1 button::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  /*100% plus double the times left values*/
+  height: calc(100% + 10px);
+  background-image: url("../public/images/heros/background.jpeg");
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.btn-1 button:hover::after {
+  transform: scaleX(0);
+}
+
+/*  */
+
+.btn-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-book button {
+  text-decoration: none;
+  border: 2px solid #010100;
+  padding: 15px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-book button::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  /*100% plus double the times left values*/
+  height: calc(100% - 10px);
+  background-image: url("../public/images/heros/background.jpeg");
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(0);
+}
+
+.btn-book button:hover::after {
+  transform: scaleY(1);
+}
+
+.btn-book button::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  /*100% plus double the times left values*/
+  height: calc(100% + 10px);
+  background-image: url("../public/images/heros/background.jpeg");
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(0);
+}
+
+.btn-book button:hover::before {
+  transform: scaleX(1);
+}

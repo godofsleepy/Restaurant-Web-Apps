@@ -20,6 +20,20 @@ function itemRestaurantHome(resto) {
     </a>`;
 }
 
+function bookButton() {
+  return `
+  <div id="btn" class="btn-1">
+  <button><span>Book</span></button>
+</div>`;
+}
+
+function bookedButton() {
+  return `
+  <div id="btn" class="btn-book">
+  <button><span>Booked</span></button>
+</div>`;
+}
+
 function itemDetailRestaurant(resto) {
   let categories = '';
   if (resto.categories.length > 0) {
@@ -76,9 +90,13 @@ function itemDetailRestaurant(resto) {
      <p class="detail-headline">Review</p>
      <br>
      ${reviews}
+     <br>
+    <div id="book-button"></div>
 </div>
     `;
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export { itemRestaurantHome, itemDetailRestaurant };
+export {
+  itemRestaurantHome, itemDetailRestaurant, bookButton, bookedButton,
+};
