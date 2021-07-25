@@ -18,6 +18,10 @@ class DataRepository {
   }
 
   static async detailRestaurants(id) {
+    const resto = await DataRepository.getBooked(id);
+    if (resto != null) {
+      return resto;
+    }
     const response = await fetch(API_ENDPOINT.DETAIL(id));
     const responseJson = await response.json();
     return responseJson.restaurant;
