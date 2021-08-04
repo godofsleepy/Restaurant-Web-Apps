@@ -23,14 +23,14 @@ function itemRestaurantHome(resto) {
 function bookButton() {
   return `
   <div id="btn" class="btn-1">
-  <button><span>Book</span></button>
+  <button aria-label="Like This Restaurant"><span>Book</span></button>
 </div>`;
 }
 
 function bookedButton() {
   return `
   <div id="btn" class="btn-book">
-  <button><span>Booked</span></button>
+  <button aria-label="Unlike This Restaurant"><span>Booked</span></button>
 </div>`;
 }
 

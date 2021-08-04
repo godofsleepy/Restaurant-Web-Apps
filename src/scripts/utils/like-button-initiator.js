@@ -1,9 +1,9 @@
-import DataRepository from '../data/data-repository';
 import { bookedButton, bookButton } from '../views/components/components';
 
 const LikeButtonInitiator = {
-  async init({ likeButtonContainer, resto }) {
+  async init({ likeButtonContainer, resto, repository }) {
     this._likeButtonContainer = likeButtonContainer;
+    this._repository = repository;
     this._resto = resto;
 
     await this._renderButton();
@@ -18,7 +18,7 @@ const LikeButtonInitiator = {
   },
 
   async _isRestoExist(id) {
-    const resto = await DataRepository.getBooked(id);
+    const resto = await this._repository.getBooked(id);
     return !!resto;
   },
 
@@ -27,7 +27,7 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector('#btn');
     likeButton.addEventListener('click', async () => {
-      await DataRepository.putBook(this._resto);
+      await this._repository.putBook(this._resto);
       this._renderButton();
     });
   },
@@ -37,7 +37,7 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector('#btn');
     likeButton.addEventListener('click', async () => {
-      await DataRepository.deleteBooked(this._resto.id);
+      await this._repository.deleteBooked(this._resto.id);
       this._renderButton();
     });
   },

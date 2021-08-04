@@ -21,6 +21,7 @@ const Detail = {
     LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#book-button'),
       resto: restoData,
+      repository: DataRepository,
     });
   },
 };
