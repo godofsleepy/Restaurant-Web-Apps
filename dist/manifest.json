@@ -1,0 +1,60 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.a1fb9f711b7e69305999510aca0ad440.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_384x384.210460899e09d6af778a843f030c7a6d.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_192x192.4e916460b84ec9499dcbf4bf019e928a.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_152x152.3fb282de93c7cf5f5a4abeaeecd60bbf.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_144x144.1fae53f32b024863573b55ef356018a6.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_128x128.61fbf6f24e6fc36b3482d14317edee31.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_96x96.e88aa4a01527b33047ffbf111afcef52.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_72x72.edb97af3be40c7655a57564f886de965.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "name": "LeRisa",
+  "short_name": "LeRisa",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "Find your favorite restaurant here.",
+  "background_color": "#fff",
+  "theme_color": "#fff"
+}

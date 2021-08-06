@@ -8,9 +8,14 @@ function itemRestaurantHome(resto) {
 
   return `<a href="${`#/detail/${resto.id}`}" class="link-item">
     <article class="post-item">
-    <img class="post-item__thumbnail"
+    <picture>
+  <source media="(max-width: 200px)" srcset="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}">
+  <img class="post-item__thumbnail lazyload"
          src="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}"
          alt="${resto.name}">
+
+</picture>  
+   
     <div class="post-item__content">
         <h1 class="post-item__title">${resto.name}</h1>
         <p>${star}</p>
@@ -67,8 +72,13 @@ function itemDetailRestaurant(resto) {
   }
 
   return `
-  <div class="detail-item">    
-    <img src="https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}" alt="detail">
+  <div class="detail-item">  
+  <picture>
+  <source media="(max-width: 800px)" srcset="https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}">
+  <img class=".post-item__thumbnail lazyload" src="https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}" alt="detail">
+
+</picture>  
+    
     <h2 class="detail-title">${resto.name} <span class="detail-type"><i>${categories}</i></span></h2>
     <p>${star}</p>
     <br>

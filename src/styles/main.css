@@ -243,6 +243,7 @@ main {
 
 .post-item__thumbnail {
   width: 100%;
+  height: 100%;
 }
 
 .post-item__date {

@@ -26,6 +26,8 @@
     "favicons-webpack-plugin": "^3.0.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "jasmine-ajax": "^4.0.0",
     "jasmine-core": "^3.5.0",
     "karma": "^5.1.0",
@@ -35,15 +37,19 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
     "puppeteer": "^10.2.0",
+    "sharp": "^0.28.3",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.0.9",
+    "webpack-pwa-manifest": "^4.3.0",
     "whatwg-fetch": "^3.2.0"
   },
   "dependencies": {
     "idb": "^6.1.2",
+    "lazysizes": "^5.3.2",
     "regenerator-runtime": "^0.13.5",
     "serviceworker-webpack-plugin": "^1.0.1"
   }
