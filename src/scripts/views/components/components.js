@@ -9,9 +9,9 @@ function itemRestaurantHome(resto) {
   return `<a href="${`#/detail/${resto.id}`}" class="link-item">
     <article class="post-item">
     <picture>
-  <source media="(max-width: 200px)" srcset="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}">
+  <source media="(max-width: 200px)" data-srcset="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}">
   <img class="post-item__thumbnail lazyload"
-         src="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}"
+         data-src="${CONFIG.BASE_IMAGE_URL}${resto.pictureId}"
          alt="${resto.name}">
 
 </picture>  
@@ -28,14 +28,14 @@ function itemRestaurantHome(resto) {
 function bookButton() {
   return `
   <div id="btn" class="btn-1">
-  <button aria-label="Like This Restaurant"><span>Book</span></button>
+  <button aria-label="Like This Restaurant"><span>Favorite</span></button>
 </div>`;
 }
 
 function bookedButton() {
   return `
   <div id="btn" class="btn-book">
-  <button aria-label="Unlike This Restaurant"><span>Booked</span></button>
+  <button aria-label="Unlike This Restaurant"><span>Favorite</span></button>
 </div>`;
 }
 
@@ -74,8 +74,8 @@ function itemDetailRestaurant(resto) {
   return `
   <div class="detail-item">  
   <picture>
-  <source media="(max-width: 800px)" srcset="https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}">
-  <img class=".post-item__thumbnail lazyload" src="https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}" alt="detail">
+  <source media="(max-width: 800px)" data-srcset="https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}">
+  <img class=".post-item__thumbnail lazyload" data-src="https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}" alt="detail">
 
 </picture>  
     

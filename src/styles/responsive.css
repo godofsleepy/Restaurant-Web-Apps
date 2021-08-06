@@ -148,3 +148,15 @@
     max-width: 1200px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-image: url("../public/images/heros/hero-image_3-small.png");
+    background-position: center;
+  }
+}

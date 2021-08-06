@@ -48,7 +48,7 @@ module.exports = {
       background_color: '#fff',
       theme_color: '#fff',
       icons: [{
-        src: path.resolve('src/public/images/icons/icon-512x512.png'),
+        src: path.resolve('src/public/icons/icon-512x512.png'),
         sizes: [72, 96, 128, 144, 152, 192, 384, 512],
         type: 'image/png',
         purpose: 'any maskable',
