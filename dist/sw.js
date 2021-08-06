@@ -2,6 +2,8 @@ var serviceWorkerOption = {
   "assets": [
     "/e98929e5f59d58b06903047b2ae250a9.jpeg",
     "/198d07d4a138115e1f173e2d8efe97d7.jpg",
+    "/0.bundle.js",
+    "/1.bundle.js",
     "/bundle.js",
     "/manifest.json",
     "/icon_512x512.a1fb9f711b7e69305999510aca0ad440.png",

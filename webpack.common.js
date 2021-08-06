@@ -6,7 +6,6 @@ const path = require('path');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/scripts/index.js'),
@@ -37,7 +36,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new BundleAnalyzerPlugin(),
+
     new WebpackPwaManifest({
       filename: 'manifest.json',
       name: 'LeRisa',
