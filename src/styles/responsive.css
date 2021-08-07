@@ -4,10 +4,6 @@
 }
 
 @media screen and (max-width: 499px) {
-  .content {
-    padding: 0;
-  }
-
   .nav {
     z-index: 10;
     background-image: url("../public/images/heros/background.jpeg");
@@ -146,6 +142,10 @@
 @media screen and (min-width: 1200px) {
   main {
     max-width: 1200px;
+  }
+
+  .content {
+    padding: 32px;
   }
 }
 
