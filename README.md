@@ -6,7 +6,7 @@
   <h3 align="center">Le Risa</h3>
 
   <p align="center">
-    Submission Dicoding Menjadi Front-End Developer Expert (Di branch untuk lihat Submission lainnya) <br/> demo :https://restaurant-webs-d51fa.web.app/
+    Submission Dicoding Menjadi Front-End Developer Expert (Di branch untuk lihat Submission lainnya) <br/> demo : https://restaurant-webs-d51fa.web.app/
     <br />
   </p>
 </p>
